@@ -5,4 +5,199 @@
 body {
     font-family: 'Maven Pro', sans-serif;
     /* background-color: fuchsia; */
+    margin: 0;
+}
+/* -------------App.js----------------- */
+.container {
+    box-sizing: border-box;
+    color: #0075be;
+    width: 100vw;
+    margin-top: 0;
+    min-height: 100vh;
+}
+.main {
+    /* padding: 1em; */
+    background-color: #0075be;
+    margin-top: 0;
+    min-height: 94vh;
+}
+.main__title {
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: white;
+    /* margin-top: .5em; */
+    padding: .2em;
+}
+.inputBlock {
+    margin-top: 2.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5em;
+}
+.inputBlock__input{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.2rem;
+    padding: .5em 1.5em;
+}
+.inputBlock__searchBtn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #ed1c24;
+    color: white;
+    margin-left: 1em;
+    border: none;
+    border-radius: 4px;
+    padding: .3em .9em;
+    cursor: pointer;
+}
+.searchDisplay{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5em 1.5em 0; 
+    border-radius: 4px;
+    padding: 0 1em;
+}
+.searchDisplay__text {
+    color: black
+}
+.searchDisplay--results{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.searchDisplay__OrderButtons{
+    align-self: flex-end;
+}
+.searchDisplay__button{
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0075be31;
+}
+.searchDisplay__button--selected{
+    text-transform: uppercase;
+    font-weight: 900;
+    border: none;
+    border: 1px solid #0075be;
+    background-color: #0075be31;
+    border-radius: 4px;
+    font-size: 1.3rem;
+}
+.pagination{
+    background-color:#0075be;
+    text-align: center;
+    border: 1px solid #0075be;
+    margin-bottom: 2.5em;
+    line-height: 1.5;
+}
+.pagination--text{
+    color: white;
+    font-size: 1.2rem;
+}
+.pagination__button{
+    font-size: 1.2rem;
+    color: #0075be;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0 .5em;
+    cursor: pointer;
+}
+
+.footer{
+    color: black;
+    text-align: center;
+}
+.footer_link{
+    color: #0075be;
+    cursor: pointer;
+}
+/* ----------------Book.js------------------- */
+.book{
+    background-color: white;
+    color: black;
+    margin: 0 1.5em;
+    border-radius: 4px;
+    padding-left: 1em; 
+    padding-right: 1em;
+}
+.book--detail{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.book__title{
+    padding-top: .5em;
+}
+.book__cover {
+    width: 40px;
+    height: 60px;
+    border: 1px solid #0075be;
+}
+.book__id{
+    text-align: center;
+    padding-bottom: .5em;
+}
+@media screen and (min-width: 550px){
+    .book__title {
+        grid-area: header;
+      }
+      .book__author {
+        grid-area: main;
+      }
+      .book__year {
+          grid-area: middle2;
+      }
+      .book__cover {
+        width: 80px;
+        height: 120px;
+        grid-area: sidebar;
+      }
+      .book__id {
+        grid-area: footer;
+        text-align: center;
+      }
+    .book{
+        margin-top: 1em;
+        padding: 0 15%;
+        display: grid;
+        grid-template-columns: repeat(4, 95px);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header header header"
+        "main middle2 . sidebar"
+        "footer footer footer footer";
+    }
+    .searchDisplay{
+        padding-left: 8em;
+    }
+
+}
+
+@media screen and (min-width: 750px){
+    .book{
+        display: flex;
+        gap: .5em;
+        justify-content: center;
+        align-items:flex-start;
+    }
+    .book__cover{
+        width: 120px;
+        height: 180px;
+        /* padding: 1em; */
+    }
+    .book__id{
+        order: -1;
+        align-self: flex-start;
+        font-size: 3rem;
+        align-self: center;
+        justify-self: center;
+        margin-right: 1em;
+    }
+    .main{
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
