@@ -41,17 +41,17 @@ export default function Form() {
 //Trying all possible alternatives to get a cover. Unfortuantly, it doesn't address images that are just a pixel.
 //Called on line67
     function getCover(book){
-        if(book.isbn){
-            return `https://covers.openlibrary.org/b/isbn/${book.isbn[0]}.jpg`
-        } else if(book.oclc){
-            return `https://covers.openlibrary.org/b/oclc/${book.oclc[0]}.jpg`
-        } else if(book.lccn){
-            return `https://covers.openlibrary.org/b/lccn/${book.lccn[0]}.jpg`
-        } else if(book.olid){
-            return `https://covers.openlibrary.org/b/olid/${book.olid[0]}.jpg`
-        } else if(book.id){
-            return `https://covers.openlibrary.org/b/id/${book.id[0]}.jpg`
-        }
+       if(book[`isbn`]){
+            return `https://covers.openlibrary.org/b/isbn/${book['isbn'][0]}.jpg`
+        } else if(book[`oclc`]){
+            return `https://covers.openlibrary.org/b/oclc/${book['oclc'][0]}.jpg`
+        } else if(book[`lccn`]){
+            return `https://covers.openlibrary.org/b/lccn/${book['lccn'][0]}.jpg`
+        } else if(book[`olid`]){
+            return `https://covers.openlibrary.org/b/olid/${book['olid'][0]}.jpg`
+        } else if(book[`id`]){
+            return `https://covers.openlibrary.org/b/id/${book['id'][0]}.jpg`
+        } 
     }
 
 //Called on line 116
@@ -133,7 +133,7 @@ export default function Form() {
             <h1 className="main__title">BMO Library</h1>
             <div className="inputBlock">
             <input
-                calssName="inputBlock__input"
+                className="inputBlock__input"
                 type="text"
                 placeholder="book title"
                 onChange={handleChange}

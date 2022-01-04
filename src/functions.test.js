@@ -1,16 +1,19 @@
 const functions = require(`./functions`)
 
-test(`Adds 2 + 2 to equal 4`, () => {
-    expect(functions.add(2, 2)).toBe(4);
-});
+test(`Calling the great gatsby should return 169 docs`, ()=>{
+    expect.assertions(1)
+    return functions.fetchUser()
+        .then(data => {
+            expect(data.numFound).toBe(169)
+        })
+})
 
-test(`Adds 2 + 2 to NOT equal 5`, () => {
-    expect(functions.add(2, 2)).not.toBe(5);
-});
+test(`Array of objects returned alphabeticaly based on property string`, ()=>{
+    expect(functions.makeDisplayFoundBooks()[0]).toEqual({
+        title: "A title"
+    })
+})
 
-// Check fot truthy & falsy values
-// toBeNull matches only null
-// toBeUndefined matches only undefined
-// toBeDefined is the opposite of toBeUndefined
-// toBeTruthy matches anything that an if statement treats as true
-// toBeFalsy matches anything that an if statement treats as false
+test(`get something, even if lots of the image arrays don't exist`, ()=>{
+    expect(functions.getCover()).not.toBeUndefined()
+})
