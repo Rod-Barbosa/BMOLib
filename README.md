@@ -37,8 +37,8 @@ The application should also have the ability to:
 <img src="searchDownMid.png" width="20%" height="20%" />
 <img src="searchDownEnd.png" width="20%" height="20%" />
   </div>
-![](./550Date.png)
-![](./800Date.png)
+<img src="./550Date.png" width="20%" height="20%" />
+<img src="./800Date.png" width="20%" height="20%" />
 
 ### Links
 
