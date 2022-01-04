@@ -30,8 +30,8 @@ The application should also have the ability to:
 - Any other functionality you feel will make this app a better experience
 
 ### Screenshot
-<img src="./start.png" width="200" height="200" />
-![](./start.png)
+<img src="./start.png"/>
+<img src="./searchUp.png" width="300" height="500" />
 ![](./searchUp.png)
 ![](./searchDown.png)
 ![](./searchDownMid.png)
