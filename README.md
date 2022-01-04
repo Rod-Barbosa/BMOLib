@@ -1,6 +1,4 @@
-# Scrimba Frontend Career Path - (Momentum Chrome Extension - Module 07)
-
-This is a solution to the [Scrimba Frontend Career Path - (Module07-APIs/Game of War)](https://scrimba.com/learn/frontend).
+# BMO Frontend Assignment - (Open Lib - API)
 
 ## Table of contents
 
@@ -21,7 +19,15 @@ This is a solution to the [Scrimba Frontend Career Path - (Module07-APIs/Game of
 
 ### The challenge
 
-Clone of the famous chrome extension "momentum"
+The task is to create an application that accepts a title as a parameter. The application should then return book results, and for each book should display the following information:
+• Title
+• Book Cover
+• Author
+• Published Date
+The application should also have the ability to:
+• Sort results alphabetically by title
+• Sort results by more recently published
+• Any other functionality you feel will make this app a better experience
 
 After this Challenge I should be able to Code/Understand:
 
