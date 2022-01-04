@@ -123,3 +123,6 @@ This needs more than just 2 days of work. Typography is all over the place. CSS 
 
 ## Acknowledgments
 
+Shout out to the folks in [Open Library API]("https://openlibrary.org/" )
+Sure I ran into problems, but it pales in comparison with the sheer amount of data they make available. Thank you for your hard work.
+
