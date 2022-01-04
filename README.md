@@ -39,7 +39,7 @@ The application should also have the ability to:
 <img src="searchDownEnd.png" width="20%" height="20%" />
   </div>
 <p>At 550px width, display changes to grid</p>
-<img src="./550Date.png" width="50%" height="50%" />
+<img src=".pics/550Date.png" width="50%" height="50%" />
 <p>At 750px width, display changes to flex with different order</p>
 <img src="./800Date.png" width="80%" height="80%" />
 
