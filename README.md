@@ -30,18 +30,18 @@ The application should also have the ability to:
 - Any other functionality you feel will make this app a better experience
 
 ### Screenshot
-<img src="./start.png"/>
+<img src="./pics/start.png"/>
 <div>
   <p>Examples of pagination/search results display</p>
-<img src="./searchUp.png" width="20%" height="20%" />
-<img src="./searchDown.png" width="20%" height="20%" />
-<img src="searchDownMid.png" width="20%" height="20%" />
-<img src="searchDownEnd.png" width="20%" height="20%" />
+<img src="./pics/searchUp.png" width="20%" height="20%" />
+<img src="./pics/searchDown.png" width="20%" height="20%" />
+<img src="./pics/searchDownMid.png" width="20%" height="20%" />
+<img src="./pics/searchDownEnd.png" width="20%" height="20%" />
   </div>
 <p>At 550px width, display changes to grid</p>
 <img src="./pics/550Date.png" width="50%" height="50%" />
 <p>At 750px width, display changes to flex with different order</p>
-<img src="./800Date.png" width="80%" height="80%" />
+<img src="./pics/800Date.png" width="80%" height="80%" />
 
 ### Links
 
