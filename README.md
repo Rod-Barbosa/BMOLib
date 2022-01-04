@@ -31,7 +31,7 @@ The application should also have the ability to:
 
 ### Screenshot
 <img src="./start.png"/>
-<img src="./searchUp.png" width="50%" height="50%" />
+<img src="./searchUp.png" width="30%" height="30%" />
 ![](./searchUp.png)
 ![](./searchDown.png)
 ![](./searchDownMid.png)
