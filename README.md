@@ -33,8 +33,8 @@ The application should also have the ability to:
 <img src="./start.png"/>
 <img src="./searchUp.png" width="30%" height="30%" />
 <img src="./searchDown.png" width="30%" height="30%" />
-![](./searchDownMid.png)
-![](./searchDownEnd.png)
+<img src="searchDownMid.png" width="30%" height="30%" />
+<img src="searchDownEnd.png" width="30%" height="30%" />
 ![](./550Date.png)
 ![](./800Date.png)
 
