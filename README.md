@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Scrimba Frontend Career Path - (Momentum Chrome Extension - Module 07)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Scrimba Frontend Career Path - (Module07-APIs/Game of War)](https://scrimba.com/learn/frontend).
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Clone of the famous chrome extension "momentum"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After this Challenge I should be able to Code/Understand:
 
-### `npm run build`
+- Clients/Servers
+- Requests/Response
+- JSON
+- fetch/.then()
+- Requests(methods, headers, body, URL)
+- REST API Design (params, query)
+- Async Javascript (callbacks, promises, async/await)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](./imagem.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution Github URL: [https://github.com/Rod-Barbosa/momentumClone](https://github.com/Rod-Barbosa/momentumClone)
+- Live Site URL: no live site for chrome extension, jsut download the repo and install on your browser
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Semantic HTML5 markup
+- CSS custom properties
+- JavaScript
+- Chrome Dev Tools
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What I learned
 
-## Learn More
+This makes the background walways pretty
+```css
+body {
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Making letters easier to read on a picture background
+```css
+{
+    text-shadow: 0px 0px 20px #aaaaaa;
+    text-shadow: 1px 1px 2px #474747;
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To work with view hight without running into margins forcing scrolling
+```css
+* {
+    box-sizing: border-box;
+}  
+```
 
-### Code Splitting
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This could go 1000 different directions, but just adding stuff to the screen seems counter productive to a tab extension that is supposed to free your mind from being bombarded by too much information
 
-### Analyzing the Bundle Size
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API#getting_the_current_position) - Specially cool to use the lon and lat params
+- [Javascript Clock Updated every second](https://stackoverflow.com/questions/39418405/making-a-live-clock-in-javascript) - setInterval(function, 1000) saves the day once again
+- [Crypto API](https://www.coingecko.com/en/api/documentation) - Coingecko seems overloaded and slow, but it gets the job done
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Website - [Rodrigo Portfolio](https://www.gelatodigital.com)
+- Frontend Mentor - [@Rod-Barbosa](https://www.frontendmentor.io/profile/Rod-Barbosa)
+- Github - [@Rod-Barbosa](https://github.com/Rod-Barbosa)
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
