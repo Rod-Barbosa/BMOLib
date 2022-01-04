@@ -20,28 +20,24 @@
 ### The challenge
 
 The task is to create an application that accepts a title as a parameter. The application should then return book results, and for each book should display the following information:
-• Title
-• Book Cover
-• Author
-• Published Date
+- Title
+- Book Cover
+- Author
+- Published Date
 The application should also have the ability to:
-• Sort results alphabetically by title
-• Sort results by more recently published
-• Any other functionality you feel will make this app a better experience
-
-After this Challenge I should be able to Code/Understand:
-
-- Clients/Servers
-- Requests/Response
-- JSON
-- fetch/.then()
-- Requests(methods, headers, body, URL)
-- REST API Design (params, query)
-- Async Javascript (callbacks, promises, async/await)
+- Sort results alphabetically by title
+- Sort results by more recently published
+- Any other functionality you feel will make this app a better experience
 
 ### Screenshot
 
-![](./imagem.png)
+![](./start.png)
+![](./searchUp.png)
+![](./searchDown.png)
+![](./searchDownMid.png)
+![](./searchDownEnd.png)
+![](./550Date.png)
+![](./800Date.png)
 
 ### Links
 
