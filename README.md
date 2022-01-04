@@ -84,8 +84,26 @@ Dynamically adding/removing classes in react can be clearly demonstrated with CS
 <button className={`searchDisplay__button${view[0]!=="alphabetical" ? "--selected" : ""}`} onClick={dateOrder}>Date</button>
 ```
 
-
-
+useEffect Hook can be combined with with a controlled component, so it will only make an API call once the user presses the search button with a valid value on the text input. By making the dependencies array watch a third piece of state, I can set up for both pagination (display only 25 results on the screen) and sort (alphabetical or published year).
+```React Hooks
+    React.useEffect(()=>{
+        if(userInput!==""){
+            fetch(`https://openlibrary.org/search.json?title=${userInput}&limit=200`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                const booksArr = []
+                populateBoksArray(booksArr, data)
+                
+                setFoundData({
+                    numFound: data.numFound,
+                    booksArr: booksArr
+                })
+            })
+        }
+            // console.log(foundData)
+    }, [view])
+```
 
 ### Continued development
 
