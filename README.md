@@ -45,55 +45,57 @@ The application should also have the ability to:
 
 ### Links
 
-- Solution Github URL: [https://github.com/Rod-Barbosa/momentumClone](https://github.com/Rod-Barbosa/momentumClone)
-- Live Site URL: no live site for chrome extension, jsut download the repo and install on your browser
+- Solution Github URL: [https://github.com/Rod-Barbosa/BMOLib](https://github.com/Rod-Barbosa/BMOLib)
+- Live Site URL: [https://rodrigo-bmo-lib.netlify.app/](https://rodrigo-bmo-lib.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- JavaScript
-- Chrome Dev Tools
+- React
+- Jest
+- React Hooks
+- CSS BEM
 
 ### What I learned
 
-This makes the background walways pretty
-```css
-body {
-    background: no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+Fetch functions can be easily tested with axios, as long as you get the expect.assertions(num) correctly
+```Jest
+const { default: axios } = require("axios");
+const functions = {
+
+    fetchUser: () => axios.get(`https://openlibrary.org/search.json?title=the%20great%20gatsby&limit=200`)
+        .then(res => res.data)
+        .catch(err => 'error'),
+```
+```Jest
+test(`Calling the great gatsby should return 169 docs`, ()=>{
+    expect.assertions(1)
+    return functions.fetchUser()
+        .then(data => {
+            expect(data.numFound).toBe(169)
+        })
+})
 ```
 
-Making letters easier to read on a picture background
-```css
-{
-    text-shadow: 0px 0px 20px #aaaaaa;
-    text-shadow: 1px 1px 2px #474747;
-}
+Dynamically adding/removing classes in react can be clearly demonstrated with CSS BEM naming convention
+```React
+<button className={`searchDisplay__button${view[0]==="alphabetical" ? "--selected" : ""}`} onClick={alphabeticalOrder}>a - z</button>
+<button className={`searchDisplay__button${view[0]!=="alphabetical" ? "--selected" : ""}`} onClick={dateOrder}>Date</button>
 ```
 
-To work with view hight without running into margins forcing scrolling
-```css
-* {
-    box-sizing: border-box;
-}  
-```
+
+
 
 ### Continued development
 
-This could go 1000 different directions, but just adding stuff to the screen seems counter productive to a tab extension that is supposed to free your mind from being bombarded by too much information
+This needs more than just 2 days of work. Typography is all over the place. CSS could use refactoring. Alignments of different media queries is unpolished to say the least. A buy button, security checks, a reset function and better treatment to initial screen are all obvious improvements that could be achieved with 1~2 weeks of work. Also, no icons were used (easier accessibility compliance).
 
 ### Useful resources
 
-- [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API#getting_the_current_position) - Specially cool to use the lon and lat params
-- [Javascript Clock Updated every second](https://stackoverflow.com/questions/39418405/making-a-live-clock-in-javascript) - setInterval(function, 1000) saves the day once again
-- [Crypto API](https://www.coingecko.com/en/api/documentation) - Coingecko seems overloaded and slow, but it gets the job done
+- [CSS Convention](http://getbem.com/naming/) - Good for team work
+- [Button or Link, acessibility](https://ux.iu.edu/writings/buttons-vs-links-basic/) - Easy to remember guide on how not to drop that ball
+- [Dynamic add/remove class React](https://www.andreasreiterer.at/dynamically-add-classes/) - Looks impossible at first glance, but it is obvious after you get the order of the ticks and scape characters
 
 ## Author
 
