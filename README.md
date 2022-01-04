@@ -32,13 +32,14 @@ The application should also have the ability to:
 ### Screenshot
 <img src="./start.png"/>
 <div>
+  <p>Examples of pagination/search results display</p>
 <img src="./searchUp.png" width="20%" height="20%" />
 <img src="./searchDown.png" width="20%" height="20%" />
 <img src="searchDownMid.png" width="20%" height="20%" />
 <img src="searchDownEnd.png" width="20%" height="20%" />
   </div>
-<img src="./550Date.png" width="20%" height="20%" />
-<img src="./800Date.png" width="20%" height="20%" />
+<img src="./550Date.png" width="80%" height="80%" />
+<img src="./800Date.png" width="80%" height="80%" />
 
 ### Links
 
